@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 10px;
+    background-color: #f4f7f4;
+    color: #000000;
+}
+
+header {
+    background-color: #3100e0;
+    color: white;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    margin-top: 25px;
+}
+
+h2 {
+    color: #3100e0;
+}
+
+.description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #165565;
+}
+
+.search-container button {
+    background-color: #3100e0;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #3100e0;
+}
+
+#searchResults {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#searchResults button {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+
+#searchResults button:hover {
+    background-color: #e8f5e9;
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.coordinates {
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.coordinates h3 {
+    color: #3100e0;
+}
+
+.legend {
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.legend h3 {
+    color: #3100e0;
+}
+
+.legend ul {
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #3100e0;
+    color: white;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container button {
+        width: 100%;
+    }
+}
