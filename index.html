@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Barangay Libona Community Map</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Barangay Libona Community Map</h1>
+      <p>Libona, Bukidnon</p>
+    </header>
+
+    <main>
+      <h2>Explore Our Community</h2>
+
+      <p class="description">
+        Search and explore important places and landmarks around Barangay
+        Libona.
+      </p>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search any place..." />
+
+        <button onclick="searchPlace()">Search</button>
+      </div>
+
+      <div id="searchResults"></div>
+
+      <div id="map"></div>
+
+      <div class="coordinates">
+        <h3>Selected Coordinates</h3>
+
+        <p id="coordinates">Click anywhere on the map to get coordinates.</p>
+      </div>
+
+      <div class="legend">
+        <h3>Map Legend</h3>
+
+        <ul>
+          <li>📍 Barangay Hall</li>
+          <li>📍 Elementary School</li>
+          <li>📍 Municipal Hall</li>
+          <li>🔵 1000-Meter Radius</li>
+          <li>🔎 Search Location</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>Barangay Libona Community Mapping Project</p>
+      <p>Libona, Bukidnon</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
